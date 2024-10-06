@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #b34949;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 960px; 
+    margin: 0 auto; 
+}
+
+main {
+    padding: 30px 0;
+}
+
+main .container {
+    width: 960px; 
+    margin: 0 auto; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.auth-button {
+    background-color: #ffffff;
+    color: rgb(98, 98, 98);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border-radius: 50px;
+    font-size: medium;
+}
+
+.button {
+    margin-top: 10px; /* ボタンの上に余白を追加 */
+    align-self: flex-start; /* ボタンを左揃えにする */
+}
+
+.button a {
+    background: #eee;
+    border-radius: 9999px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 250px;
+    padding: 10px 25px;
+    font-family: "Noto Sans Japanese";
+    color: #333333;
+    line-height: 1.8;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+.button a:hover {
+    background: #333333;
+    color: #FFF;
+}
+
+.button a:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #333333;
+    border-right: 3px solid #333333;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+
+.button a:hover:after {
+    border-color: #FFF;
+}
+
+.auth-button:hover {
+    background-color: #cbcbcb;
+}
+
+.product-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px; /* 商品間の余白 */
+    border: 1px solid #ddd; /* 枠線を追加 */
+    padding: 10px; /* 商品の周りに余白 */
+    border-radius: 10px; /* 角を丸くする */
+    width: 100%;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    flex-shrink: 0; /* 画像のサイズを維持 */
+}
+
+.product-info {
+    margin-left: 20px;
+    display: flex; /* フレックスボックスを使用 */
+    flex-direction: column; /* 縦に並べる */
+}
+
+.product-info p {
+    margin: 5px 0; /* 各商品の情報の間隔を小さく */
+}
+.username {
+    color: #ffffff; /* ユーザー名のテキスト色 */
+}
+
+
